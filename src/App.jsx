@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button, Nav, Navbar, Form, InputGroup, ListG
 import './App.css'
 import dictionaryData from './data/dictionary.json'
 import ErrorBoundary from './ErrorBoundary'
+import React from 'react'
 
 function App() {
   // Load data from localStorage or dictionary.json file
@@ -30,6 +31,9 @@ function App() {
   const [location, setLocation] = useState({ city: '---', state: '---' });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [mainPanelRef] = useState(React.createRef());
+  const [sidePanelRef] = useState(React.createRef());
+  const [scrollPosition, setScrollPosition] = useState({ isAtTop: true, isAtBottom: false });
 
   // State for UI interactions
   const [searchTerm, setSearchTerm] = useState('');
@@ -886,6 +890,24 @@ function App() {
     setShowAboutModal(true);
   };
 
+  // Track scroll position for portrait mode navigation buttons
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const isAtTop = scrollY < 100;
+      const isAtBottom = scrollY + window.innerHeight > document.body.offsetHeight - 100;
+      
+      setScrollPosition({ isAtTop, isAtBottom });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <ErrorBoundary>
       <div className="app-container">
@@ -960,7 +982,7 @@ function App() {
         <Container fluid className="main-content">
           <Row>
             {/* Main Panel - Terms List (takes about half the screen) */}
-            <Col md={7} className="terms-panel">
+            <Col md={7} className="terms-panel" ref={mainPanelRef}>
               <Card className="mb-3">
                 <Card.Header className="d-flex justify-content-between align-items-center">
                   <h5 className="mb-0">Translation Terms</h5>
@@ -1123,7 +1145,7 @@ function App() {
             </Col>
 
             {/* Side Panel - Zip Code Lookup Widget and Alphabet */}
-            <Col md={5} className="side-panel">
+            <Col md={5} className="side-panel" ref={sidePanelRef}>
               <Card>
                 <Card.Body>
                   <div className="zip-lookup-widget mb-3">
@@ -1323,6 +1345,35 @@ function App() {
               </Card>
             </Col>
           </Row>
+          
+          {/* Quick navigation buttons for portrait mode */}
+          <div className={`quick-nav-buttons ${scrollPosition.isAtTop ? 'at-top' : ''} ${scrollPosition.isAtBottom ? 'at-bottom' : ''}`}>
+            <Button 
+              variant="primary" 
+              className="quick-nav-btn to-side-panel" 
+              onClick={() => {
+                if (sidePanelRef.current) {
+                  sidePanelRef.current.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              <i className="bi bi-arrow-down-circle"></i>
+              <span>Side Panel</span>
+            </Button>
+            
+            <Button 
+              variant="primary" 
+              className="quick-nav-btn to-main-panel" 
+              onClick={() => {
+                if (mainPanelRef.current) {
+                  mainPanelRef.current.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              <i className="bi bi-arrow-up-circle"></i>
+              <span>Main Panel</span>
+            </Button>
+          </div>
         </Container>
         
         {/* Category Modal */}
