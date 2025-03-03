@@ -1,0 +1,173 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Medical",
+      "order": 1,
+      "subcategories": [
+        { "id": 1, "name": "Conditions & Symptoms" },
+        { "id": 2, "name": "Procedures & Tests" },
+        { "id": 3, "name": "Anatomy & Body Parts" },
+        { "id": 4, "name": "Medical Equipment & Devices" },
+        { "id": 5, "name": "Medications & Treatment" },
+        { "id": 6, "name": "Pregnancy & Childbirth" },
+        { "id": 7, "name": "Medical Actions & Processes" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Legal",
+      "order": 2,
+      "subcategories": [
+        { "id": 8, "name": "Court Proceedings" },
+        { "id": 9, "name": "Documentation" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Financial",
+      "order": 3,
+      "subcategories": [
+        { "id": 10, "name": "Banking" },
+        { "id": 11, "name": "Insurance" }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "id": "med_001",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "abdominal pain",
+      "spanishTerm": "dolor abdominal",
+      "notes": "Pain in the abdominal region",
+      "tags": ["pain", "digestive", "symptom"]
+    },
+    {
+      "id": "med_002",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "acute pain",
+      "spanishTerm": "dolor agudo",
+      "notes": "Sudden, intense pain",
+      "tags": ["pain", "symptom", "acute"]
+    },
+    {
+      "id": "med_003",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "ADD (attention deficit disorder)",
+      "spanishTerm": "trastorno por déficit de atención",
+      "notes": "Neurodevelopmental disorder affecting attention",
+      "tags": ["neurological", "mental health", "chronic"]
+    },
+    {
+      "id": "med_004",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "ADHD (attention deficit and hyperactivity disorder)",
+      "spanishTerm": "trastorno por déficit de atención e hiperactividad",
+      "notes": "Neurodevelopmental disorder with hyperactivity",
+      "tags": ["neurological", "mental health", "chronic"]
+    },
+    {
+      "id": "med_005",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "advanced stage cancer",
+      "spanishTerm": "cáncer en etapa avanzada",
+      "notes": "Late-stage cancer diagnosis",
+      "tags": ["cancer", "terminal", "serious"]
+    },
+    {
+      "id": "med_006",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "airway obstruction",
+      "spanishTerm": "obstrucción de las vías respiratorias",
+      "notes": "Blockage in breathing passages",
+      "tags": ["respiratory", "emergency", "breathing"]
+    },
+    {
+      "id": "med_007",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "angina",
+      "spanishTerm": "angina",
+      "notes": "Chest pain due to reduced blood flow",
+      "tags": ["cardiac", "pain", "heart"]
+    },
+    {
+      "id": "med_008",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "anxious",
+      "spanishTerm": "ansioso/a",
+      "notes": "Feeling of anxiety or nervousness",
+      "tags": ["mental health", "psychological", "symptom"]
+    },
+    {
+      "id": "med_009",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "blindness",
+      "spanishTerm": "ceguera",
+      "notes": "Complete loss of vision",
+      "tags": ["vision", "disability", "chronic"]
+    },
+    {
+      "id": "med_010",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "blurred vision",
+      "spanishTerm": "visión borrosa",
+      "notes": "Unclear or unfocused vision",
+      "tags": ["vision", "symptom", "eyes"]
+    },
+    {
+      "id": "med_011",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "brain damage",
+      "spanishTerm": "daño cerebral",
+      "notes": "Injury to brain tissue",
+      "tags": ["neurological", "serious", "brain"]
+    },
+    {
+      "id": "med_012",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "canker sore",
+      "spanishTerm": "aftas",
+      "notes": "Mouth ulcer",
+      "tags": ["mouth", "pain", "oral"]
+    },
+    {
+      "id": "med_013",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "cardiac arrest",
+      "spanishTerm": "paro cardíaco",
+      "notes": "Sudden stop of heart function",
+      "tags": ["cardiac", "emergency", "heart"]
+    },
+    {
+      "id": "med_014",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "chicken pox",
+      "spanishTerm": "varicela",
+      "notes": "Viral infection with itchy rash",
+      "tags": ["infection", "virus", "contagious"]
+    },
+    {
+      "id": "med_015",
+      "categoryId": 1,
+      "subcategoryId": 1,
+      "englishTerm": "chills",
+      "spanishTerm": "escalofríos",
+      "notes": "Feeling of cold with shivering",
+      "tags": ["fever", "symptom", "infection"]
+    }
+  ]
+} 

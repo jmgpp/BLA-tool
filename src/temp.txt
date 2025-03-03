@@ -1,0 +1,183 @@
+(to) breast feed	dar de lactar
+(to) deprive	privar
+(to) develop	desarrollar
+(to) discharge	dar de alta
+(to) discuss	conversar
+(to) exercise	ejercitarse
+(to) give birth	dar a luz
+(to) inject	inyectar
+(to) numb	adormecer/entumecer
+(to) prick	pinchar
+(to) rule out	descartar
+(to) surround	rodear/estar alrededor
+abdominal pain	dolor abdominal
+acute pain	dolor agudo
+ADD (attention deficit disorder)	trastorno por déficit de atención
+ADHD (attention deficit and hyperactivity disorder)	trastorno por déficit de atención e hiperactividad
+advanced stage cancer	cáncer en etapa avanzada
+airway obstruction	obstrucción de las vías respiratorias
+allergens	alérgenos
+amniocentesis	amniocentesis
+amniotic sac	saco amniótico
+anesthesia	anestesia
+angina	angina
+annual check-up	revisión anual
+antihistamine	antihistamínico
+anxious	ansioso/a
+best bet/option	mejor apuesta/opción
+birth defects	defectos de nacimiento
+blindness	ceguera
+blood pressure	presión arterial
+blood sugar level	nivel de azúcar en la sangre
+blood test	examen de sangre
+blood thinner	anticoagulante
+blood vessel	vaso sanguíneo
+bloodwork	análisis de sangre
+blurred vision	visión borrosa
+bone marrow	médula ósea
+bowel movement	defecación/evacuación/deposición
+brain damage	daño cerebral
+canker sore	aftas
+cardiac arrest	paro cardíaco
+chicken pox	varicela
+chills	escalofríos
+chromosomal problems	problemas congénitos/cromosómicos
+clot	coágulo
+colonoscopy	colonoscopia
+colostomy	colostomía
+communicable disease	enfermedad contagiosa/transmitible
+cotton swab	hisopo/bastoncillo/algodoncillo médico
+CPR (cardiopulmonary resuscitation)	RCP (reanimación cardiopulmonar)
+cramp	calambre
+CT scan	tomografía computarizada
+dealing/(to) deal	lidiar
+delay	demora/atraso
+depth	profundidad
+devices	aparatos/dispositivos
+diagnosis	diagnóstico
+discharge instructions	instrucciones del alta
+disease	enfermedad
+dizziness	mareos
+dosage	dosis/dosificación
+Down syndrome	síndrome de Down
+ear canal	canal auditivo
+early warning signs	señales de alerta/detección temprana
+echography	ecografía
+EEG (electroencephalogram)	electroencefalograma
+EKG/ECG (electrocardiogram)	electrocardiograma
+groin	ingle
+pap smear	Papanicolaou
+excessive sweating	sudoración excesiva
+eye nerve	nervio óptico
+fallopian tubes	trompas de Falopio
+family history	historial familiar/antecedente familiar
+fast track to recovery	vía rápida de recuperación
+fast/to fast	ayuno/ayunar
+fetal oxygen saturation	saturación de oxígeno del feto
+fetus	feto
+findings	hallazgos
+fingers	dedos de las manos
+flu	gripe/influenza
+fluid	líquido
+fullness sensation	sensación de llenura
+genetic counselor	asesor genético/consejero en genética
+genetic predisposition	predisposición genética
+glucose	glucosa
+glucose meter/glucometer	medidor de glucosa/glucómetro
+glucose monitor	monitor de glucosa
+glycemic index	índice glucémico
+gums	encías
+hard time	momento difícil/mal rato
+health insurance	seguro de salud
+heart attack	ataque cardíaco
+heart disease	enfermedad cardíaca
+heart murmur	soplo cardíaco
+heart palpitations	palpitaciones cardíacas
+heart rate	ritmo cardíaco
+heartbeat	latido del corazón
+heartburn	acidez estomacal
+heat stroke	golpe de calor
+height	altura
+high risk pregnancy	embarazo de alto riesgo
+hot flashes	bochornos
+ICU (intensive care unit)	unidad de cuidados intensivos
+in-house	internamente
+in-network	dentro de la red
+indigestion	indigestión/empacho
+induced labor	inducción del parto/parto inducido
+inyección	inyección
+injury	lesión/herida
+insulin	insulina
+jaundice	ictericia
+painful	doloroso
+joints	articulaciones
+junk food	comida chatarra
+kidney failure	insuficiencia/falla renal
+kneecap	rótula
+length	longitud
+limbs	extremidades
+local anesthetic	anestesia local
+log	diario/registro/bitácora
+low grade fever	fiebre baja
+meal	comida
+menstrual bleeding	sangrado menstrual
+menstrual cycle	ciclo menstrual
+mental disorder	trastorno mental
+miscarriage	aborto espontáneo/pérdida
+morning sickness	náuseas matutinas
+needle	aguja
+nostrils	fosas nasales
+nutritionist	nutricionista
+open sore	llaga/herida abierta
+orthopedic walker	andador ortopédico
+orthopedist	ortopedista
+outpatient	paciente ambulatorio/extrahospitalario
+overdose	sobredosis
+pain killer	analgésico/calmante
+pericarditis	pericarditis
+pet dander	caspa de mascota
+precaution	precaución
+pressure	presión
+procedure	procedimiento
+readings	lecturas
+referral	referencia/derivación médica
+reinstated	reestablecido
+retinal detachment	desprendimiento de la retina
+ringing in the ears	zumbido en los oídos
+ringworm	tiña
+sample	muestra
+scabies	sarna
+scalp	cuero cabelludo
+sedative	sedante
+serious issues	problemas graves
+shortness of breath	falta de aire/dificultad para respirar
+side effects	efectos secundarios
+spina bifida	espina bífida
+spine	columna vertebral/espina dorsal
+spirometry test	prueba espirométrica
+spotting	manchado
+spyrometry	espirometría
+squeezing sensation	sensación de presión
+stabbing feeling	sensación de punzadas/apuñaladas
+stomach ache/pain	dolor de estómago
+stool	heces
+strep throat	estreptococo
+symptoms	síntomas
+tea spoon	cucharadita
+test strip	tira reactiva
+throbbing pain	dolor palpitante/pulsante
+tingling	hormigueo
+tonsils	amígdalas
+tooth	diente
+tracheotomy	traqueotomía
+type 1 diabetes	diabetes de tipo 1
+type 2 diabetes	diabetes de tipo 2
+ultrasound	ultrasonido/sonograma
+umbilical cord	cordón umbilical
+vaginal discharge	flujo/secreción vaginal
+vascular system	sistema vascular
+wart	verruga
+wheelchair	silla de ruedas
+womb / uterus	útero/matriz
+x-rays	radiografía/rayos x
+tangled (as in umbilical cord)	cordón umbilical enredado
