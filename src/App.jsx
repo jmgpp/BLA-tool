@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Container, Row, Col, Card, Button, Nav, Navbar, Form, InputGroup, ListGroup, Badge, Tab, Tabs, Modal } from 'react-bootstrap'
 import './App.css'
 import dictionaryData from './data/dictionary.json'
@@ -31,8 +31,8 @@ function App() {
   const [location, setLocation] = useState({ city: '---', state: '---' });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [mainPanelRef] = useState(React.createRef());
-  const [sidePanelRef] = useState(React.createRef());
+  const mainPanelRef = useRef(null);
+  const sidePanelRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState({ isAtTop: true, isAtBottom: false });
 
   // State for UI interactions
@@ -892,10 +892,15 @@ function App() {
 
   // Track scroll position for portrait mode navigation buttons
   useEffect(() => {
+    console.log("Setting up scroll detection");
+    
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const isAtTop = scrollY < 100;
       const isAtBottom = scrollY + window.innerHeight > document.body.offsetHeight - 100;
+      
+      console.log(`Scroll position: ${scrollY}, isAtTop: ${isAtTop}, isAtBottom: ${isAtBottom}`);
+      console.log(`Main panel ref exists: ${!!mainPanelRef.current}, Side panel ref exists: ${!!sidePanelRef.current}`);
       
       setScrollPosition({ isAtTop, isAtBottom });
     };
@@ -1350,28 +1355,36 @@ function App() {
           <div className={`quick-nav-buttons ${scrollPosition.isAtTop ? 'at-top' : ''} ${scrollPosition.isAtBottom ? 'at-bottom' : ''}`}>
             <Button 
               variant="primary" 
-              className="quick-nav-btn to-side-panel" 
-              onClick={() => {
-                if (sidePanelRef.current) {
-                  sidePanelRef.current.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              <i className="bi bi-arrow-down-circle"></i>
-              <span>Side Panel</span>
-            </Button>
-            
-            <Button 
-              variant="primary" 
               className="quick-nav-btn to-main-panel" 
               onClick={() => {
+                console.log("Main panel button clicked");
                 if (mainPanelRef.current) {
+                  console.log("Scrolling to main panel");
                   mainPanelRef.current.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  console.log("Main panel ref is null");
                 }
               }}
             >
               <i className="bi bi-arrow-up-circle"></i>
-              <span>Main Panel</span>
+              <span>Terms</span>
+            </Button>
+            
+            <Button 
+              variant="primary" 
+              className="quick-nav-btn to-side-panel" 
+              onClick={() => {
+                console.log("Side panel button clicked");
+                if (sidePanelRef.current) {
+                  console.log("Scrolling to side panel");
+                  sidePanelRef.current.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  console.log("Side panel ref is null");
+                }
+              }}
+            >
+              <i className="bi bi-arrow-down-circle"></i>
+              <span>ZIP</span>
             </Button>
           </div>
         </Container>
