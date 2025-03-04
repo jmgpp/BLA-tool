@@ -913,6 +913,27 @@ function App() {
     };
   }, []);
 
+  // Add state for tracking last Enter key timestamp
+  const [lastEnterKeyTime, setLastEnterKeyTime] = useState(0);
+
+  // Function to handle double-enter in search field
+  const handleSearchKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      const currentTime = new Date().getTime();
+      const timeDiff = currentTime - lastEnterKeyTime;
+      
+      // If Enter pressed twice within 500ms
+      if (timeDiff < 500 && searchTerm.trim() !== '') {
+        // Open Cambridge dictionary in new tab
+        const searchUrl = `https://dictionary.cambridge.org/dictionary/english-spanish/${encodeURIComponent(searchTerm.trim())}`;
+        window.open(searchUrl, '_blank');
+      }
+      
+      setLastEnterKeyTime(currentTime);
+      e.preventDefault(); // Prevent form submission
+    }
+  };
+
   return (
     <ErrorBoundary>
       <div className="app-container">
@@ -991,14 +1012,14 @@ function App() {
               <Card className="mb-3">
                 <Card.Header className="d-flex justify-content-between align-items-center">
                   <h5 className="mb-0">Translation Terms</h5>
-                  <div>
+      <div>
                     <Button variant="outline-secondary" className="me-2" onClick={openCategoryManagerModal}>
                       <i className="bi bi-gear-fill me-1"></i> Edit Categories
                     </Button>
                     <Button variant="success" onClick={() => openTermModal('add')}>
                       <i className="bi bi-plus-circle me-1"></i> Add New Term
                     </Button>
-                  </div>
+      </div>
                 </Card.Header>
                 <Card.Body>
                   {/* Search Bar */}
@@ -1009,6 +1030,7 @@ function App() {
                           placeholder="Search terms in English or Spanish..."
                           value={searchTerm}
                           onChange={(e) => setSearchTerm(e.target.value)}
+                          onKeyDown={handleSearchKeyDown}
                         />
                         <Button variant="outline-secondary" onClick={() => setSearchTerm('')}>
                           Clear
@@ -1196,8 +1218,8 @@ function App() {
                           <span className={`${location.state === '---' ? 'text-muted' : 'text-primary'}`}>
                             {location.state}
                           </span>
-                        </p>
-                      </div>
+        </p>
+      </div>
                     </div>
                   </div>
 
